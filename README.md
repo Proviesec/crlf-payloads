@@ -14,3 +14,6 @@ If you have some good CRLF payloads, just create a PullRequest.
 crlf%0D%20Header-Test:PROVIESEC
 
 # Tutorial
+
+Use burpsuite
+Ffuf
