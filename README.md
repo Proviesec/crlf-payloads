@@ -23,6 +23,7 @@ crlf%0D%20Header-Test:PROVIESEC
 ## Reports 
 
 https://hackerone.com/reports/590020
+https://hackerone.com/reports/446271
 
 ## Tutorial
 
