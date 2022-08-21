@@ -22,6 +22,8 @@ crlf%0D%20Header-Test:PROVIESEC
 
 ## Reports 
 
+https://hackerone.com/reports/590020
+
 ## Tutorial
 
 - Use burpsuite
