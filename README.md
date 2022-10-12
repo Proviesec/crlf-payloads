@@ -26,6 +26,10 @@ crlf%0D%20Header-Test:PROVIESEC
 https://hackerone.com/reports/590020
 https://hackerone.com/reports/446271
 
+# writeup
+
+https://infosecwriteups.com/6000-with-microsoft-hall-of-fame-microsoft-firewall-bypass-crlf-to-xss-microsoft-bug-bounty-8f6615c47922
+
 ## Tutorial
 
 - Use burpsuite
