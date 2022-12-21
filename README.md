@@ -20,6 +20,7 @@ crlf%0D%20Header-Test:PROVIESEC
 
 - [ ] best crlf payloads 
 - [ ] crlf reports 
+- [ ] crlf attacks
 
 ## Reports 
 
