@@ -33,5 +33,5 @@ https://infosecwriteups.com/6000-with-microsoft-hall-of-fame-microsoft-firewall-
 
 ## Tutorial
 
-- Use burpsuite
+- Use burpsuite (Repeater)
 - Ffuf Master
