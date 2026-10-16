@@ -165,3 +165,5 @@ HTTP/1.1+200+OK%0aContent-Type:+text/html%0aContent-Length:+132%0aContent-Encodi
 %0A
 %%0A0AHeader-Test:PROVIESEC
 %E5%98%8D%E5%98%8ASet-Cookie:param=proviesec%E5%98%8D%E5%98%8A%E5%98%8D%E5%98%8A%E5%98%8D%E5%98%8A%E5%98%BCscript%E5%98%BEalert(1);%E5%98%BC/script%E5%98%BE
+%0d%0aX-Assessment-Control: True
+%0d%0a%0d%0a<h1>Test</h1>
